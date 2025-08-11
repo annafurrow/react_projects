@@ -1,0 +1,10 @@
+function ErrorAlert({error, search}) {
+    return( 
+        <div className="alert alert-dismissible alert-danger">
+        <button type="button" className="btn-close" data-bs-dismiss="alert"></button>
+        '{search}' resulted in '{error}' error
+      </div>
+    );
+}
+
+export default ErrorAlert; 
