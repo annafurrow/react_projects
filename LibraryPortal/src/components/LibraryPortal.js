@@ -31,7 +31,7 @@ function LibraryPortal() {
           </form>
         </div>
       </div>
-      {/* {error && <ErrorAlert error={error} search={userEnteredText}/>} */}
+      {error && <ErrorAlert error={error} search={userEnteredText}/>}
       {books.length > 0 && <p className='text-dark'>Showing {books.length} results for '{userEnteredText}'</p>}
       {books.map((book) => (
                 <LibraryDetail key={book.imdbID} movie={book} />
